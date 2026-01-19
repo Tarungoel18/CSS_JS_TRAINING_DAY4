@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery Selector</title>
+    <link rel="stylesheet" href="/Exercise_01/assets/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- 
+        Task: This page contains the UI of the tab
+        There are two tabs which are not working
+        You need to write a unique that will make the tabs works
+        You need to use the jQuery selector to achieve the same
+        There are already some selectors added to the tab for you to use
+        They are data-tab, data-tab-btn, data-tab-content
+        You must use them to make the tab work  
+        
+        Note: There is an active class that you can use to make the tab active and their corresponding button
+    -->
+
+    <h2>Tab 1</h2>
+    <div class="tab-wrapper" data-tab>
+      <nav class="tab-header">
+        <ul>
+          <li>
+            <button type="button" class="active" data-tab-btn="1">Tab 1</button>
+          </li>
+          <li><button type="button" data-tab-btn="2">Tab 2</button></li>
+          <li><button type="button" data-tab-btn="3">Tab 3</button></li>
+        </ul>
+      </nav>
+      <div class="tab-body">
+        <div class="tab-content active" data-tab-content="1">Tab 1</div>
+        <div class="tab-content" data-tab-content="2">Tab 2</div>
+        <div class="tab-content" data-tab-content="3">Tab 3</div>
+      </div>
+    </div>
+
+    <h2>Tab 2</h2>
+    <div class="tab-wrapper" data-tab>
+      <nav class="tab-header">
+        <ul>
+          <li>
+            <button type="button" class="active" data-tab-btn="1">Tab 1</button>
+          </li>
+          <li><button type="button" data-tab-btn="2">Tab 2</button></li>
+          <li><button type="button" data-tab-btn="3">Tab 3</button></li>
+        </ul>
+      </nav>
+      <div class="tab-body">
+        <div class="tab-content active" data-tab-content="1">Tab 1</div>
+        <div class="tab-content" data-tab-content="2">Tab 2</div>
+        <div class="tab-content" data-tab-content="3">Tab 3</div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/jquery/script.js"></script>
+</html>
