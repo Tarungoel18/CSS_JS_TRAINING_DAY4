@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="/Exercise_03/assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a4eba448c7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 
+        Task: 
+        Create a modal same as the bootstrap modal
+        -> The modal should have a header, body, and footer
+        -> The modal should have a close button on the top right corner
+        -> The modal should have a backdrop
+        -> The modal should be closed when the backdrop is clicked
+        -> The modal should be closed when the close button is clicked
+        -> There should be multiple modals on the page and all should work independently using the same code
+        -> The modal should be opened using a button
+        -> The modal should be closed using a close button added inside the footer of the modal
+        -> If the content overflows, the modal body should have a scrollbar
+
+        Note: You need to include the jQuery
+        Also, this exercise will require everything that you have learned in the CSS and JS learning
+    -->
+    <div class="modal-backdrop"></div>
+    <div class="main-container">
+      <!-- Modal 1 -->
+      <button class="btn open-modal-btn" data-modal="modal1">
+        Open Modal 1
+      </button>
+      <div class="modal" id="modal1">
+        <div class="modal-header">
+          <div><h3>Welcome to Custom Modal - 1</h3></div>
+          <div><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          accusantium sapiente ut consequuntur. Cupiditate deleniti, libero
+          perferendis nostrum mollitia itaque asperiores iure minima eos, unde
+          ratione, corrupti numquam voluptas! In optio adipisci atque fugiat
+          voluptatum id ex, fuga esse eaque inventore laudantium commodi!
+          Laborum facilis cupiditate dolor itaque rem doloremque?
+        </div>
+        <div class="modal-footer">
+          <div>
+            <button class="footer-btn-close btn">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <button class="btn open-modal-btn" data-modal="modal2">
+        Open Modal 2
+      </button>
+      <div class="modal" id="modal2">
+        <div class="modal-header">
+          <div><h3>Welcome to Custom Modal - 2</h3></div>
+          <div><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          accusantium sapiente ut consequuntur. Cupiditate deleniti, libero
+          perferendis nostrum mollitia itaque asperiores iure minima eos, unde
+          ratione, corrupti numquam voluptas! In optio adipisci atque fugiat
+          voluptatum id ex, fuga esse eaque inventore laudantium commodi!
+          Laborum facilis cupiditate dolor itaque rem doloremque? Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Eaque, laboriosam iste
+          delectus perferendis tempore molestias, in eveniet facere neque culpa
+          explicabo. Veritatis laborum exercitationem culpa similique molestiae
+          nulla dicta vitae ipsam sequi vel excepturi qui aut assumenda velit
+          molestias ullam veniam inventore perferendis tempora neque officiis,
+          saepe optio itaque. Impedit nesciunt officia, ipsum quae explicabo
+          dignissimos culpa et placeat quasi accusantium obcaecati aliquid ipsam
+          velit alias error repellendus repudiandae tenetur quisquam sapiente
+          rerum deleniti consequatur unde! Dolore fugiat ducimus, optio ullam
+          quos assumenda nobis iste cumque a quisquam minima dolorum doloremque
+          omnis nostrum facere laboriosam voluptatum blanditiis dolor eveniet
+          deserunt dignissimos architecto repellendus obcaecati cupiditate.
+          Delectus reiciendis enim error quis nam commodi, cum recusandae? Ea
+          distinctio, voluptatibus dicta molestiae ullam eaque id tempora quas,
+          autem quia, ratione alias aliquid possimus? Totam unde, sint omnis a
+          optio blanditiis odit beatae dolorem magni eaque eveniet nisi rem ut
+          ullam numquam dolorum quibusdam consectetur doloribus expedita
+          molestias quaerat eius rerum obcaecati? Numquam, cum! Ad delectus
+          debitis, officia vero, numquam perferendis iste amet nostrum
+          praesentium, hic possimus. Quo rerum eum ducimus voluptatum! Adipisci
+          aut nostrum quibusdam possimus quis sed vero corporis ipsa esse, sunt
+          temporibus nam voluptas et ipsum. Necessitatibus, distinctio atque.
+          Culpa obcaecati soluta, provident delectus minima consectetur non eos!
+          Illum, doloremque voluptas quas libero tempora autem ullam architecto
+          praesentium explicabo nisi dolor dolorum suscipit facilis fugiat
+          laboriosam harum accusamus, esse hic dolore sed! Ab qui, officia, enim
+          dolor repellat libero deleniti magnam nisi inventore magni expedita
+          porro. Reiciendis blanditiis commodi odio aliquam labore itaque
+          tenetur est ducimus minus exercitationem id, corporis veniam saepe
+          consectetur vitae deleniti facere quibusdam fugiat maiores repellat
+          odit molestias officia cupiditate numquam. Corporis, distinctio?
+          Mollitia commodi voluptatem sed voluptatum laborum dolorem sequi est
+          ipsa nihil iure nemo excepturi dolores necessitatibus facilis, omnis
+          molestiae ducimus possimus. Dolor exercitationem vitae cumque atque
+          suscipit excepturi perferendis iusto culpa fuga soluta molestiae
+          optio, minus odit! Cupiditate culpa, aliquam assumenda molestiae
+          accusamus modi at mollitia, rerum repellendus perferendis dicta sunt
+          sint, deserunt atque cumque est. Reiciendis earum aliquid explicabo
+          unde impedit tempora? Ut recusandae illum repudiandae suscipit est
+          ipsum, labore libero quas possimus provident deserunt corporis quod
+          praesentium, ullam harum id nemo ad repellat? Numquam illo ipsa fuga
+          consequatur quibusdam quam enim laudantium esse eveniet consectetur
+          eum cumque error aliquam quas minima perferendis ullam in voluptas
+          exercitationem eligendi, aperiam dolorum voluptate illum odit. Ut
+          ipsum incidunt id, sint repudiandae laboriosam eligendi facere ducimus
+          voluptates, mollitia sunt delectus cupiditate iure blanditiis totam
+          corporis, beatae dolorum odio! Iste ut voluptas facere, ipsa corrupti
+          fugit dolorem hic natus temporibus ipsam recusandae distinctio quod
+          numquam, repellat earum consequuntur pariatur laboriosam reiciendis.
+          Fuga, aut vero fugit ut dolorum nostrum, nam repellendus odit
+          explicabo obcaecati reiciendis officiis veritatis accusantium
+          distinctio, illo ipsa ducimus quam voluptatum quas! Architecto quia
+          vitae maiores tempore quam inventore harum, accusantium odit est atque
+          mollitia aut quas odio, ad enim, dolor eveniet repudiandae error.
+          Dicta, aliquam ex voluptate cum minima, porro aspernatur asperiores
+          nostrum, nulla aliquid praesentium! Ipsum molestias eveniet, aperiam
+          cupiditate veniam consequuntur repellat exercitationem asperiores
+          recusandae quidem doloremque explicabo temporibus, numquam quod
+          officiis adipisci dolores id neque est natus facilis praesentium, aut
+          a! Eius, maiores. Et non eum cum quod officiis doloribus saepe animi
+          laborum placeat laudantium totam ducimus necessitatibus, quaerat
+          perferendis magni qui aliquam repellat, ullam, rem exercitationem!
+          Voluptatum explicabo delectus adipisci optio perferendis, ullam
+          doloremque alias, tenetur, ipsum veritatis molestias obcaecati dolorum
+          cupiditate rerum error velit possimus sapiente amet? Id, quo natus sit
+          omnis vero eius totam, maxime fugiat saepe cumque nemo ullam
+          dignissimos. Ad iste odio officia corrupti eaque asperiores porro
+          ullam, velit non, quibusdam cumque commodi quisquam doloribus neque
+          corporis illo. Rem aspernatur eum earum magnam animi commodi excepturi
+          sequi, amet sed repudiandae quae labore molestias ex officia sunt
+          laboriosam repellendus ipsam. Assumenda temporibus repellendus
+          nesciunt vel quibusdam. Commodi praesentium suscipit ut corporis iure
+          natus vel culpa! Libero mollitia in nesciunt sequi, sed ab suscipit
+          vel, maiores eligendi id labore iure. Tempore officia possimus
+          delectus illum, quas quibusdam. Veniam ad repudiandae sapiente nam,
+          laudantium aut eaque modi eum dolorum suscipit obcaecati odio esse
+          odit architecto explicabo labore itaque harum optio dolorem? Amet
+          accusantium ullam, veniam libero cum consequatur nobis fugiat
+          architecto. Maiores ullam assumenda reprehenderit nostrum? Alias, quos
+          placeat commodi totam sapiente minima tempora ad reprehenderit quo
+          aliquid sint mollitia molestias quas deleniti suscipit omnis iure
+          laudantium ipsam dolor ipsa dolore neque aspernatur! Corporis,
+          blanditiis iusto deserunt alias dolorem adipisci vel sint iste
+          officia. Voluptatum minus maxime soluta sed nemo, doloremque facere
+          voluptate placeat velit delectus quas dolor a dolore consequuntur
+          aperiam laborum tempore, impedit minima itaque corporis iusto. Culpa
+          obcaecati quis, amet quod quisquam illum recusandae illo rerum
+          inventore aspernatur! Quas distinctio totam officiis commodi! Sapiente
+          aut modi commodi fugit aspernatur facere exercitationem fugiat
+          nostrum, aliquid corrupti quam quidem veritatis saepe unde quae nobis,
+          quos perferendis quibusdam libero! Dolorem atque culpa nisi, saepe
+          optio rerum unde nulla neque. Quae quibusdam, eos necessitatibus
+          laboriosam rerum nobis tenetur earum, expedita vitae fugit error
+          ratione amet omnis harum hic illo ullam veniam odio porro assumenda!
+          Animi excepturi corporis tenetur. Cupiditate laboriosam atque error
+          natus a corporis sunt vel fugit quasi? Quas ipsa perferendis quos
+          ipsam inventore nostrum dolore animi amet facere mollitia vitae, eius
+          beatae vero ad laudantium voluptatem aliquid repellat magnam odit!
+          Culpa dolorem voluptatum qui consequatur quis suscipit nihil, nesciunt
+          reprehenderit ea molestiae a veniam libero natus tenetur expedita
+          dicta iusto distinctio numquam iste aspernatur similique dolore enim.
+          Numquam, magni ducimus. Voluptatibus hic consequatur magni, cum quos
+          nemo! Eligendi repellendus molestias at, autem dolor praesentium
+          suscipit voluptatem quae nostrum consequuntur aperiam deleniti fugit
+          ipsa, itaque, repudiandae architecto totam tenetur rerum culpa
+          exercitationem iste voluptate earum. Illo iure corporis repudiandae
+          natus culpa eveniet amet nemo nihil adipisci, eius alias fugit quis ex
+          ad ipsa impedit veniam explicabo officia quae temporibus aut minima?
+          Tempora ut a dolor laboriosam unde velit ad molestiae quis ipsum
+          facilis! Minus commodi accusantium maxime, nobis quaerat ab dolor
+          repudiandae iure doloremque, id dolorem? Porro sapiente exercitationem
+          sequi impedit consequuntur, ex rem corrupti atque provident
+          perspiciatis suscipit.
+        </div>
+        <div class="modal-footer">
+          <div>
+            <button class="footer-btn-close btn">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 3 -->
+      <button class="btn open-modal-btn" data-modal="modal3">
+        Open Modal 3
+      </button>
+      <div class="modal" id="modal3">
+        <div class="modal-header">
+          <div><h3>Welcome to Custom Modal - 3</h3></div>
+          <div><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          accusantium sapiente ut consequuntur. Cupiditate deleniti, libero
+          perferendis nostrum mollitia itaque asperiores iure minima eos, unde
+          ratione, corrupti numquam voluptas! In optio adipisci atque fugiat
+          voluptatum id ex, fuga esse eaque inventore laudantium commodi!
+          Laborum facilis cupiditate dolor itaque rem doloremque?
+        </div>
+        <div class="modal-footer">
+          <div>
+            <button class="footer-btn-close btn">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 4 -->
+      <button class="btn open-modal-btn" data-modal="modal4">
+        Open Modal 4
+      </button>
+      <div class="modal" id="modal4">
+        <div class="modal-header">
+          <div><h3>Welcome to Custom Modal - 4</h3></div>
+          <div><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          accusantium sapiente ut consequuntur. Cupiditate deleniti, libero
+          perferendis nostrum mollitia itaque asperiores iure minima eos, unde
+          ratione, corrupti numquam voluptas! In optio adipisci atque fugiat
+          voluptatum id ex, fuga esse eaque inventore laudantium commodi!
+          Laborum facilis cupiditate dolor itaque rem doloremque?
+        </div>
+        <div class="modal-footer">
+          <div>
+            <button class="footer-btn-close btn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/Exercise_03/assets/jquery/script.js"></script>
+  </body>
+</html>
